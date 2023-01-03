@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <caption>TableTitle</caption>
+        <col style="width: 80px;">
+        <colgroup span="2" style="width: 150px;"></colgroup>
+        <col style="width: 100px;">
+        <tr>
+            <th>Prod No.</th>
+            <th>Name</th>
+            <th>Remain</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Coke</td>
+            <td>1</td>
+            <td>1,500</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Cider</td>
+            <td>2</td>
+            <td rowspan="2">1,000</td><!--행(세로방향) 병합은 rowspan, 열(가로방향) 병합은 colspan, 병합한 자리는 따로 선언 안함-->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sparkling</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td colspan="3">6,500</td>
+        </tr>
+    </table>
+</body>
+
+</html>
