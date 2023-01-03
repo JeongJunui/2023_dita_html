@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+        }
+        .red-box
+        {
+            background-color: darkred;
+            float: left;
+        }
+        .green-box
+        {
+            background-color: darkgreen;
+            float: left;
+        }
+        .blue-box
+        {
+            background-color: darkblue;
+            clear: left;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+    <!-- blue 하나만 float 적용하지 않을 경우 blue는 다른 둘에 깔려서 보이지 않음 -->
+    <!-- clear 사용 시 바로 앞에 있는 요소의 float 속성을 무시하게 됨, 단 clear의 속성은 앞 요소의 float와 동일해야 함 -->
+</body>
+</html>
